@@ -13,13 +13,35 @@ console.groupEnd('Square')
 
 console.group('Triangle');
 
-const calculateTriangle = (side, hight, base) => {
+const calculateTriangle = (side1, side2, base) => {
     
-    //TODO: challenges...
+    let h = Math.sqrt(( Math.pow(side1,2) ) - ( Math.pow(side1,2) ) / 4)
+    
+    if (side1 == base) {
 
-    return {
-        perimetry : side * 3,
-        area: (base * hight) / 2
+        return {
+             type: "Equilatero", 
+             perimetry : side1 * 3,
+             area: ( (Math.pow(side1,2) * Math.sqrt(3)) )/4
+        }
+
+    }else if (side1 != base && side2 != base && side1 != side2) {
+        
+        const s = (side1 + side2 +  base) / 2; 
+
+        return {
+            type: "Escaleno",
+            perimetry : side1 + side2 + base,
+            area: Math.sqrt(s * (s - side1) * (s - side2) * (s - base))
+        }
+
+    } else {
+
+        return {
+            type: "Rectangulo",
+            perimetry : side1 * 2 + base,
+            area: (base * h) / 2
+        }
     }
 }
 
