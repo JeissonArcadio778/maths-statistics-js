@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: aqua;
+}
+
+.main-content {
+        
+    background-color: aquamarine;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 20px; */
+}
+.main-content label {
+    margin-left: inherit;
+    margin-top: 20px;
+}
+
+.main-content input {
+    
+    margin-left: inherit;
+    margin-top: 20px;
+}
+
+.main-content p {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: blueviolet;
+}
