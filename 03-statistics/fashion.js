@@ -9,7 +9,7 @@
 
 */ 
 
-const calculateFashion = (arr = []) => {
+const countElementsArr = (arr = []) => {
     //[1,2,1]
     let  objTimes = {}; 
 
@@ -34,8 +34,19 @@ const calculateFashion = (arr = []) => {
             }
         }
     }
-   
-    console.log({objTimes});
+
+    return objTimes;  
 }
 
-calculateFashion([1,2,1,3,2,5,5])
+const resultCountElements = countElementsArr([1,2,1,3,2,5,5]); 
+
+const maxValueObj = (obj = {}) => {
+    return Math.max(...obj.map(o => o[number]))
+}
+
+
+
+console.log(resultCountElements);
+
+
+
